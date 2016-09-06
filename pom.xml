@@ -15,5 +15,25 @@
             <artifactId>spring-context</artifactId>
             <version>4.3.2.RELEASE</version>
         </dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+<version>4.3.2.RELEASE</version>
+		</dependency>
     </dependencies>
+	<build>
+		<finalName>maven-test</finalName>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>9.2.11.v20150529</version>
+			</plugin>
+		</plugins>
+	</build>
 </project>
